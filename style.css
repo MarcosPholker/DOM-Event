@@ -3,12 +3,19 @@
     padding: 0;
 }
 
-button{
+#btn1{
    position: absolute;
    top:50%;
    left: 50%;
    transform: translate(-50%,-50%);
 }
+#btn2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+ }
+
 #ct1{
     border: 1px solid black;
     width: 500px;
