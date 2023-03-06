@@ -19,7 +19,6 @@
 #ct1{
     border: 1px solid black;
     width: 500px;
-    height: 456px;
     margin-top: 25vh;
     margin-left: 25vh;
     display: inline-block;
@@ -41,7 +40,6 @@
     border: 3px solid black;
     border-radius: 10px;
     margin-bottom: 10px;
-    cursor: pointer;
 }
 
 .c1{
@@ -64,4 +62,11 @@
     background-color: #800 !important;
     color: #fcc !important;
     border-color: #f00 !important;
+}
+
+
+.btn_lixeira{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
 }

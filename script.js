@@ -1,32 +1,27 @@
 const ct1 = document.querySelector("#ct1")
-const ct2 = document.querySelector("#ct2")
-const btn1 = document.querySelector("#btn1")
-const btn2 = document.querySelector("#btn2")
-const todosCursos = [...document.querySelectorAll(".curso")]
+const curso = [...document.querySelectorAll(".curso")]
+const c1_2 = document.querySelector("#c1_2")
 
-todosCursos.map((e)=>{
-    e.addEventListener("click",(evt)=>{
-        const curso = evt.target
-        curso.classList.toggle("destaque")
+
+const cursos = ["HTML","CSS","JavaScript","PHP","MySQL","react Native"]
+
+cursos.map((el, i)=>{
+    i++
+    const novosElemento = document.createElement("div")
+    novosElemento.setAttribute("id","c"+i)
+    novosElemento.setAttribute("class", "curso c1")
+    novosElemento.innerHTML = el
+
+    const btn_lixeira = document.createElement("img")
+    btn_lixeira.setAttribute("src","./pngwing.com.png")
+    btn_lixeira.setAttribute("class", "btn_lixeira")
+    btn_lixeira.addEventListener("click",(evt)=>{
+        ct1.removeChild(evt.target.parentNode)
+        console.log(evt.target.parentNode)
     })
+
+    novosElemento.appendChild(btn_lixeira)
+    ct1.appendChild(novosElemento)
 })
-
-btn1.addEventListener("click", ()=>{
-    const cursosSelecionados = [...document.querySelectorAll(".destaque")]
-    cursosSelecionados.map((el)=>{
-        ct2.appendChild(el)
-    })
-    
-})
-
-btn2.addEventListener("click", ()=>{
-    const cursosSelecionados = [...document.querySelectorAll(".curso:not(.destaque)")]
-    const list = todosCursos.classList
-    cursosSelecionados.map((el)=>{
-        ct1.appendChild(el)
-    })
-})
-
-
 
 
