@@ -2,71 +2,30 @@
     margin: 0;
     padding: 0;
 }
-
-#btn1{
-   position: absolute;
-   top:50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-}
-#btn2{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-40%);
- }
-
-#ct1{
-    border: 1px solid black;
+#caixaBotao{
     width: 500px;
-    margin-top: 25vh;
-    margin-left: 25vh;
-    display: inline-block;
-}
-#ct2{
-    border: 1px solid black;
-    width: 500px;
-    height: 456px;
-    margin-top: 25vh;
-    margin-right: 25vh;
-    float: right;
-}
-
-.curso{
-    margin: auto;
-    padding: 20px;
-    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin-bottom: 10px;
 }
-
-.c1{
-    background-color: gray;
+#caixaCursos{
+    text-align: center;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    box-sizing: border-box;
 }
-.c2{
-    background-color: red;
-    color: white;
-}
-
-.c1:hover{
-    border: 2px solid red;
-}
-
-.c2:hover{
-    border: 2px solid blue;
-}
-
-.destaque{
-    background-color: #800 !important;
-    color: #fcc !important;
-    border-color: #f00 !important;
-}
-
-
-.btn_lixeira{
-    width: 25px;
-    height: 25px;
+.curso{
+    width: 300px;
+    background-color: #fcc;
+    padding: 10px;
+    margin: auto;  
+    margin-top: 5px;
+    margin-bottom: 5px;
     cursor: pointer;
+    
+}
+.curso:hover{
+    border: 1px solid black;
 }
