@@ -29,3 +29,8 @@
 .curso:hover{
     border: 1px solid black;
 }
+
+.selecionado{
+    background-color: red;
+    color: white;
+}
